@@ -26,7 +26,9 @@ function Popup() {
       <Grid item xs={6}>
         <Paper sx={{ maxWidth: "100%" }}>
           <MenuList className="menu">
-            <div className="menu-title">Account</div>
+            <div className="menu-title">
+              <strong>Account</strong>
+            </div>
             <Divider />
             {LIST_MENU.account.map((item, index) => {
               return (
@@ -42,7 +44,9 @@ function Popup() {
           </MenuList>
 
           <MenuList className="menu">
-            <div className="menu-title">Billing and Payment</div>
+            <div className="menu-title">
+              <strong>Billing and Payment</strong>
+            </div>
             <Divider />
             {LIST_MENU.billing.map((item, index) => {
               return (
@@ -59,7 +63,9 @@ function Popup() {
             })}
           </MenuList>
           <MenuList className="menu">
-            <div className="menu-title">Setting</div>
+            <div className="menu-title">
+              <strong>Setting</strong>
+            </div>
             <Divider />
             {LIST_MENU.setting.map((item, index) => {
               return (
