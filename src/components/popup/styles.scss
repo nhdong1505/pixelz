@@ -1,0 +1,16 @@
+.pop-up {
+  width: 600px;
+  .menu {
+    padding-left: 12px;
+    text-align: left;
+
+    .menu-title {
+      padding: 12px 0;
+    }
+  }
+  .content {
+    // background-color: red;
+    overflow: scroll;
+    height: 100%;
+  }
+}

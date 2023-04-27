@@ -1,0 +1,44 @@
+.contact-information {
+  .title {
+    text-align: left;
+  }
+  .label {
+    width: 30%;
+  }
+  input,
+  select {
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 100%;
+    border: 0.5px solid gray;
+    &:disabled {
+      background-color: gainsboro;
+    }
+  }
+
+  .input-name,
+  .select-zone {
+    flex-grow: 1;
+  }
+  .stack-custome {
+    height: 35px;
+    .edit {
+      color: gray;
+      font-size: 14px;
+      text-decoration: underline;
+      margin-left: 16px;
+      cursor: pointer;
+    }
+    .connect-google-btn {
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+      background-color: rgb(152, 3, 3);
+      padding: 10px 15px;
+    }
+    .save-btn {
+      color: #fff;
+      background-color: rgba(30, 29, 29, 0.661);
+    }
+  }
+}

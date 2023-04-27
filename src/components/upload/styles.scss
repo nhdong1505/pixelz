@@ -1,0 +1,25 @@
+.upload-image{
+    height: 150px;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .image{
+        max-width: 150px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .custom-file-upload{
+        color: #fff;
+        background-color: rgba(30, 29, 29, 0.661);
+        padding: 4px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="file"] {
+        display: none;
+    }
+}
