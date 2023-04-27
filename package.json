@@ -2,7 +2,7 @@
   "name": "pixelz-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nhdong1505.github.io/pixelz/",
+  "homepage": "https://nhdong1505.github.io/pixelz-test/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
