@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.scss';
 
+const Modal = ({ isOpen, onClose, children }) => {
+  const [modalOpen, setModalOpen] = useState(isOpen);
 
-function Modal(props) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpen = () => {
-    setIsOpen(true);
-  };
+  useEffect(() => {
+    setModalOpen(isOpen);
+  }, [isOpen]);
 
   const handleClose = () => {
-    setIsOpen(false);
+    setModalOpen(false);
+    onClose();
   };
 
   return (
     <>
-      <button onClick={handleOpen}>Open Modal</button>
-      {isOpen && (
-        <div className="modal-overlay">
+      {modalOpen && (
+        <div className="modal-container">
           <div className="modal">
-            <div className="modal-header">
-              <h3>{props.title}</h3>
-              <button onClick={handleClose}>X</button>
+            <div className="modal-content">
+              {children}
             </div>
-            <div className="modal-body">{props.children}</div>
+            <button className="close-button" onClick={handleClose}>
+              X
+            </button>
           </div>
         </div>
       )}
     </>
   );
-}
+};
 
 export default Modal;

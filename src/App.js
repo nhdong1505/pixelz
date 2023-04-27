@@ -7,31 +7,23 @@ import Box from "@mui/material/Box";
 // import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import Modal from "./components/modal";
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "70%",
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
+import { CSSTransition } from "react-transition-group";
+
 function App() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    setOpen(true);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(true);
   };
+
   const handleClose = () => {
-    setOpen(false);
+    setIsOpen(false);
   };
   return (
     <div className="App">
-      {/* <Button variant="contained">Open popup</Button> */}
-      {/* <button onClick={() => setShowModal(true)}>Show Modal</button> */}
-      <Modal>
-        <h2>Hello, World!</h2>
+      <Button onClick={handleClick} variant="contained" className="open-popup">Open Modal Popup</Button>
+      <Modal isOpen={isOpen} onClose={handleClose}>
+        <Popup />
       </Modal>
     </div>
   );

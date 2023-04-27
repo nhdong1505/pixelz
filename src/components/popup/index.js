@@ -22,7 +22,7 @@ function Popup() {
   };
 
   return (
-    <Grid container className="pop-up" spacing={1} columns={16}>
+    <Grid container className="pop-up" spacing={5} columns={16}>
       <Grid item xs={6}>
         <Paper sx={{ maxWidth: "100%" }}>
           <MenuList className="menu">
@@ -86,7 +86,7 @@ function Popup() {
       </Grid>
       <Grid className="content" item xs={10}>
         {components[selectedComponent]}
-        {components[selectedComponent]}
+        {/* {components[selectedComponent]} */}
       </Grid>
     </Grid>
   );

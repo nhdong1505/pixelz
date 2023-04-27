@@ -1,5 +1,5 @@
 .pop-up {
-  width: 600px;
+  height: 100%;
   .menu {
     padding-left: 12px;
     text-align: left;
@@ -9,8 +9,7 @@
     }
   }
   .content {
-    // background-color: red;
-    overflow: scroll;
+    // overflow-y: scroll;
     height: 100%;
   }
 }
