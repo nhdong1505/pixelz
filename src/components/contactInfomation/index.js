@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Stack from "@mui/material/Stack";
 import "./styles.scss";
 import GIcon from "../../image/g-icon.png";
@@ -68,7 +68,7 @@ function ContactInformation() {
           alignItems={"center"}
           spacing={2}
         >
-          <img src={GIcon} alt="My Image" width={15} height={15} />
+          <img src={GIcon} alt="g-icon" width={15} height={15} />
           <strong>Connect with Google</strong>
         </Stack>
       </Stack>

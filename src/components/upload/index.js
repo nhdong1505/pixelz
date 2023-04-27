@@ -4,17 +4,17 @@ import "./styles.scss";
 import defaulImage from "../../image/default.png";
 
 function ImageUploader() {
-  const [file, setFile] = useState(null);
+  // const [file, setFile] = useState(null);
   const [imageUrl, setImageUrl] = useState("");
 
   const handleImageChange = (event) => {
     const selectedFile = event.target.files[0];
     const imageUrl = URL.createObjectURL(selectedFile);
-    setFile(selectedFile);
+    // setFile(selectedFile);
     setImageUrl(imageUrl);
   };
 
-  const handleUpload = () => {};
+  // const handleUpload = () => {};
 
   return (
     <Stack
